@@ -50,6 +50,10 @@
 > cdk diff
 ```
 
+## API Reference
+
+- [API Reference · AWS CDK](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html)
+
 ## Useful commands
 
 - `npm run build`   compile typescript to js
