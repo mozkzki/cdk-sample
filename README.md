@@ -4,15 +4,21 @@
 
 このプロジェクトは、[CDKのTYPESCRIPT ワークショップ](https://summit-online-japan-cdk.workshop.aws/20-typescript.html)で作成した。
 
-```bash
+```sh
 > npm install -g aws-cdk
 > mkdir cdk-workshop && cd cdk-workshop
 > cdk init sample-app --language typescript
 ```
 
+このプロジェクトを`git clone`して始める場合
+
+```sh
+> npm install
+```
+
 ### tscをwatchモードで起動
 
-```bash
+```sh
 > cd cdk-workshop
 > npm run watch
 ```
@@ -24,35 +30,46 @@
 
 `cdk.json`がある場所で以下を実行。
 
-```bash
-> cdk synth
+```sh
+cdk synth
 ```
 
-- CDKアプリのコード(`lib/cdk-workshop-stack.ts`)からテンプレートが生成される(CDK用語で"synthesize")
+- CDKアプリのコード(`lib/cdk-workshop-stack*.ts`)からテンプレートが生成される(CDK用語で"synthesize")
 
 ### 環境の初期構築
 
 初回だけ必要。
 
-```bash
-> cdk bootstrap
+```sh
+cdk bootstrap
 ```
 
 ### デプロイ
 
-```bash
-> cdk deploy
+スタックをデプロイ。
+
+```sh
+cdk deploy
 ```
 
 ### 差分の確認
 
-```bash
-> cdk diff
+```sh
+cdk diff
 ```
 
-## API Reference
+### 削除
+
+スタックを削除。
+
+```sh
+cdk destroy
+```
+
+## Reference
 
 - [API Reference · AWS CDK](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html)
+- [AWS CDK Toolkit (cdk command) - AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/latest/guide/cli.html)
 
 ## Useful commands
 
