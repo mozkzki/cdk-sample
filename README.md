@@ -1,4 +1,4 @@
-# CDK Sample
+# CDK Sample (TypeScript)
 
 ## CDKの始め方
 
@@ -25,6 +25,7 @@
 
 - TypeScriptコンパイラ（tsc）が"watch"モードで起動する
 - .tsファイルを変更すると自動的に.jsへコンパイルされる
+- **これをやらないと以下に示す`cdk deploy`や`cdk diff`等は失敗する**
 
 ### テンプレート生成
 
